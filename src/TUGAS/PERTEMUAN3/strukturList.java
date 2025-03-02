@@ -1,7 +1,7 @@
 package PERTEMUAN3;
 
 public class strukturList {
-    private node HEAD;
+    private Node HEAD;
     
     public boolean isEmpty() {
         return HEAD == null;
@@ -9,9 +9,9 @@ public class strukturList {
 
     // Add Tail
     public void addTail(int data){
-        node posNode = null, currNode = null;
+        Node posNode = null, currNode = null;
 
-        node newNode = new node(data);
+        Node newNode = new Node(data);
         if (isEmpty()) {
             HEAD = newNode;
         }
@@ -28,7 +28,7 @@ public class strukturList {
 
     // Display
     public void displayElement() {
-        node curNode = HEAD;
+        Node curNode = HEAD;
         while(curNode != null) {
             System.out.printf(curNode.getData()+ "");
             curNode = curNode.getNext(); 
@@ -38,7 +38,7 @@ public class strukturList {
     
     // Add HEAD
     public void addHead(int data) {
-        node newNode = new node(data);
+        Node newNode = new Node(data);
         if (isEmpty()) {
             HEAD = newNode;
         }

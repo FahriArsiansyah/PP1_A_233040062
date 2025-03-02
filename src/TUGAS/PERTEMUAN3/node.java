@@ -1,11 +1,11 @@
 package PERTEMUAN3;
 
-public class node {
+public class Node {
     private int data;
-    private node next;
+    private Node next;
 
      // inisialisasi Atribut Node
-     public node (int data) {
+     public Node (int data) {
         this.data = data;
     }
 
@@ -19,11 +19,11 @@ public class node {
     }
 
     // Setter & Getter untuk Next
-    public void setNext(node next){
+    public void setNext(Node next){
         this.next = next;
     }
 
-    public node getNext() {
+    public Node getNext() {
         return next;
     }
     
